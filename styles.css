@@ -1,3 +1,77 @@
+* {
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
-    background-color: powderblue;
-  }
+  background: #043FA4;
+  background: -moz-linear-gradient(45deg, #043FA4 0%, #1B0075 100%);
+  background: -webkit-linear-gradient(45deg, #043FA4 0%, #1B0075 100%);
+  background: linear-gradient(45deg, #043FA4 0%, #1B0075 100%);
+  background-attachment: fixed;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+h1{
+  font-style: italic;
+}
+
+.header{
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 75vh;
+}
+
+section{
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 150vh;
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 3s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+}
+
+.parent {
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.childtext {
+  display: inline-block;
+  border-color: aqua;
+  border-radius: 25px;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  -webkit-box-shadow: 5px 5px 5px 1px #000000; 
+  box-shadow: 5px 5px 5px 1px #000000;
+  font-size: 40px;
+}
+
+.childimg{
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
+.text{
+  font-size: 30px;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 1rem 1rem;
+}
