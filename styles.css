@@ -3,18 +3,12 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 body {
   background: #043FA4;
   background: -moz-linear-gradient(45deg, #043FA4 0%, #1B0075 100%);
   background: -webkit-linear-gradient(45deg, #043FA4 0%, #1B0075 100%);
   background: linear-gradient(45deg, #043FA4 0%, #1B0075 100%);
   background-attachment: fixed;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 h1{
@@ -28,28 +22,11 @@ h1{
   min-height: 75vh;
 }
 
-section{
-  display: grid;
-  place-items: center;
-  align-content: center;
-  min-height: 150vh;
-}
-
-.hidden{
-  opacity: 0;
-  filter: blur(5px);
-  transition: all 3s;
-}
-
-.show{
-  opacity: 1;
-  filter: blur(0);
-}
-
 .parent {
   margin: 1rem;
   padding: 2rem 2rem;
   text-align: center;
+  z-index: -1;
 }
 
 .childtext {
@@ -74,4 +51,68 @@ section{
   vertical-align: middle;
   display: inline-block;
   padding: 1rem 1rem;
+}
+
+/*Magical appearing stuff*/
+section{
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 150vh;
+  z-index: 0;
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 3s;
+  z-index: 0;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  z-index: 0;
+}
+
+/* Drop down menu*/
+ .dropbtn {
+  background-color: #00000000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropbtn img {
+  pointer-events: visible;
+}
+
+.dropdown {
+  position: fixed;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  color: white;
+  min-width: 200px;
+  z-index: 1;
+  overflow-y: auto;
+  max-height: 300px;
+  transition: opacity 0.3s ease-in-out;
+  width: 10%;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
