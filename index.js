@@ -10,3 +10,12 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElemens = document.querySelectorAll(".hidden");
 hiddenElemens.forEach((el) => observer.observe(el));
+
+function openSB() {
+    document.getElementById("sb").style.display = "block";
+    document.getElementById("sbopen").style.visibility = "hidden";
+}
+function closeSB() {
+    document.getElementById("sb").style.display = "none";
+    document.getElementById("sbopen").style.visibility = "visible";
+}
