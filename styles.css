@@ -233,9 +233,9 @@ section{
   justify-content: center;
   align-items: center;
   width: 400px; /* This can be adjusted based on the size of your hexagon */
-  height: 400px; /* Adjust this as well to fit the entire hexagon */
+  height: 500px; /* Adjust this as well to fit the entire hexagon */
   margin: auto;
-  padding: 100px;
+  padding: 50px;
   
 }
 
@@ -252,8 +252,8 @@ section{
 
 .btn {
   position: absolute;
-  width: 100px; /* Adjust based on your design */
-  height: 100px; /* Adjust based on your design */
+  width: 150px; /* Adjust based on your design */
+  height: 150px; /* Adjust based on your design */
   background-color: #00000038;
   color: white;
   border: none;
@@ -261,17 +261,25 @@ section{
   box-shadow: 0 2px 4px darkslategray;
   border-radius: 50%;
   cursor: pointer;
-  transition: transform .2s;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 0.5s ease-in-out;
   z-index: 0;
 }
 
+
 .btn:hover {
-  transform: scale(1.5);
+  transition: 0.5s ease-in-out;
+  background: #00ff7384;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
 }
 
 #btn-1 { top: 0; left: 50%; transform: translateX(-50%); }
-#btn-2 { top: 25%; right: 0; transform: translateY(-50%) translateX(50%); }
-#btn-3 { bottom: 25%; right: 0; transform: translateY(50%) translateX(50%); }
+#btn-2 { top: 30%; right: 0; transform: translateY(-50%) translateX(50%); }
+#btn-3 { bottom: 30%; right: 0; transform: translateY(50%) translateX(50%); }
 #btn-4 { bottom: 0; left: 50%; transform: translateX(-50%); }
-#btn-5 { bottom: 25%; left: 0; transform: translateY(50%) translateX(-50%); }
-#btn-6 { top: 25%; left: 0; transform: translateY(-50%) translateX(-50%); }
+#btn-5 { bottom: 30%; left: 0; transform: translateY(50%) translateX(-50%); }
+#btn-6 { top: 30%; left: 0; transform: translateY(-50%) translateX(-50%); }
