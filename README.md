@@ -27,4 +27,4 @@ To run the image in a Docker container, use the following command
 $ docker run -itd --name website2.x --publish 80:80 rtichelaar/staticsite:1.0
 ```
 
-This will start serving the static site on port 8080. If you visit `http://localhost:8080` in your browser, you should be able to see our static site!
+This will start serving the static site on port 8080. If you visit `http://localhost` in your browser, you should be able to see our static site!
