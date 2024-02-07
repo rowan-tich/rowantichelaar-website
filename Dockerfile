@@ -7,4 +7,4 @@ COPY resume.html /usr/share/nginx/html/resume.html
 COPY projects.html /usr/share/nginx/html/projects.html
 COPY experience.html /usr/share/nginx/html/experience.html
 COPY contactme.html /usr/share/nginx/html/contactme.html
-COPY favicon.png /usr/share/nginx/html/favicon.png
+COPY images /usr/share/nginx/html/images

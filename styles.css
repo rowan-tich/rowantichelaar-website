@@ -60,7 +60,7 @@ section{
   display: grid;
   place-items: center;
   align-content: center;
-  min-height: 150vh;
+  min-height: 15vh;
   z-index: 0;
 }
 
@@ -179,9 +179,13 @@ section{
 }
 
 .logos{
+  background-color: #dedede;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-right: 5%;
+  padding-left: 1%;
   gap: 20px
 }
 
@@ -218,12 +222,40 @@ section{
 .logo:nth-child(12){
   transition-delay: 2200ms;
 }
+.logo:nth-child(13){
+  transition-delay: 2400ms;
+}
+.logo:nth-child(14){
+  transition-delay: 2600ms;
+}
+.logo:nth-child(15){
+  transition-delay: 2800ms;
+}
+.logo:nth-child(16){
+  transition-delay: 3000ms;
+}
+.logo:nth-child(17){
+  transition-delay: 3200ms;
+}
+.logo:nth-child(18){
+  transition-delay: 3400ms;
+}
+.logo:nth-child(19){
+  transition-delay: 3600ms;
+}
+.logo:nth-child(20){
+  transition-delay: 3800ms;
+}
 
 .logo{
-  background-color: #000000;
   border-radius: 10px;
-  padding: 1rem;
-  margin: 0 0.5rem;
+  padding: 15px;
+}
+
+img{
+  max-width: 200%;
+  max-height: 200%;
+
 }
 
 
@@ -235,7 +267,7 @@ section{
   width: 400px; /* This can be adjusted based on the size of your hexagon */
   height: 500px; /* Adjust this as well to fit the entire hexagon */
   margin: auto;
-  padding: 50px;
+  padding: 200px;
   
 }
 
@@ -265,12 +297,16 @@ section{
   stroke-dashoffset: 150;
   transition: 0.5s ease-in-out;
   z-index: 0;
+  font-size: 15px;
+  font-style: bold;
 }
 
 
 .btn:hover {
   transition: 0.5s ease-in-out;
   background: #00ff7384;
+  font-size: 20px;
+  font-style: bold;
 }
 
 .btn:hover svg {
@@ -283,3 +319,11 @@ section{
 #btn-4 { bottom: 0; left: 50%; transform: translateX(-50%); }
 #btn-5 { bottom: 30%; left: 0; transform: translateY(50%) translateX(-50%); }
 #btn-6 { top: 30%; left: 0; transform: translateY(-50%) translateX(-50%); }
+
+.pdf {
+  overflow: hidden;
+  text-align: center;
+  z-index: -1;
+  height: 100%;
+  min-height: 100% !important;
+}
