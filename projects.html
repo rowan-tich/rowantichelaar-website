@@ -8,7 +8,7 @@
         <meta name="description" content="Please hire me">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="styles.css" >
-        <script defer src="./index.js"></script>
+        <script defer src="./projects.js"></script>
     </head>
 <body>
     <div class="sidebar project-container" style="display:none" id="sb">
@@ -22,11 +22,27 @@
     </div>
 
     <button class="sbopen" onclick="openSB()" style="display:inline-block" id="sbopen">&#9776;</button>
-    <div class="parent">
-        <div class="text">Hello World</div>
-    </div>
+    <button class="topbtn text" href="index.html">Rowan Tichelaar</button>
+
+    <h1 class="parent">Featured Projects</h1>
+
+    <div class="project-container">
+        <div class="image">
+          <img src="images/badger.jpg" class="rounded-corners">
+        </div>
+        <div class="childtext">BadgerPulse</div>
+      </div>
+
+      <div class="project-container">
+        <div class="image">
+          <img src="images/badger.jpg" class="rounded-corners">
+        </div>
+        <div class="childtext">Portfolio Website</div>
+      </div>
+
+
     <section class="hidden">
-        <div class = "logos">
+        <div class = "logos" id="imageBar">
             <div class = "logo hiddenLogos">
                 <img src = "images/javaLogo.png">
             </div>
@@ -89,5 +105,38 @@
             </div>
         </div>
     </section>
+
+    <div stlye="padding-bottom: 200px"></div>
+
+    <h1 class="parent">Honorable Mentions</h1>
+
+    <div class="project-container">
+        <div class="image">
+          <img src="images/badger.jpg" class="rounded-corners">
+        </div>
+        <div class="childtext">Clip Generator</div>
+      </div>
+
+      <div class="project-container">
+        <div class="image">
+          <img src="images/badger.jpg" class="rounded-corners">
+        </div>
+        <div class="childtext">Poker Analysis</div>
+      </div>
+
+      <div class="project-container">
+        <div class="image">
+          <img src="images/badger.jpg" class="rounded-corners">
+        </div>
+        <div class="childtext">Top-Down Zombie Game</div>
+      </div>
+
+      <div class="project-container">
+        <div class="image">
+          <img src="images/badger.jpg" class="rounded-corners">
+        </div>
+        <div class="childtext">Quizlet Creator</div>
+      </div>
+
 </body>
 </html>
