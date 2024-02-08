@@ -3,6 +3,7 @@ COPY default.conf /etc/nginx/conf.d/default.conf
 
 COPY index.html /usr/share/nginx/html/index.html
 COPY index.js /usr/share/nginx/html/index.js
+COPY projects.js /usr/share/nginx/html/projects.js
 COPY styles.css /usr/share/nginx/html/styles.css
 
 COPY resume.html /usr/share/nginx/html/resume.html
