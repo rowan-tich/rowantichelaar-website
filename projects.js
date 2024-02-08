@@ -34,17 +34,24 @@ const observer2 = new IntersectionObserver((entries) => {
 const hiddenElemens2 = document.querySelectorAll(".hiddenLogos");
 hiddenElemens2.forEach((el) => observer2.observe(el));
 
-window.addEventListener('scroll', function() {
-    const images = document.querySelectorAll('#imageBar img');
+
+
+
+document.querySelectorAll('.blurry').forEach(div => {
+    div.addEventListener('mouseover', () => {
+      // Split the data-set values and filter out any empty strings
+      const dataSets = div.getAttribute('data-set').split(',').filter(Boolean);
+      // For each data-set value, find matching divs and unblur
+      dataSets.forEach(dataSet => {
+        document.querySelectorAll(`.blurry[data-set*="${dataSet}"]`).forEach(matchingDiv => matchingDiv.classList.add('unblurred'));
+      });
+    });
   
-    images.forEach(img => {
-      const imgPosition = img.getBoundingClientRect(); // Get position of the image relative to the viewport
-  
-      // Check if the image is outside the viewport
-      if(imgPosition.top < window.innerHeight && imgPosition.bottom >= 0) {
-        img.classList.remove('blur'); // Image is in view, remove blur
-      } else {
-        img.classList.add('blur'); // Image is out of view, add blur
-      }
+    div.addEventListener('mouseout', () => {
+      const dataSets = div.getAttribute('data-set').split(',').filter(Boolean);
+      dataSets.forEach(dataSet => {
+        document.querySelectorAll(`.blurry[data-set*="${dataSet}"]`).forEach(matchingDiv => matchingDiv.classList.remove('unblurred'));
+      });
     });
   });
+  

@@ -40,7 +40,7 @@ h1{
   vertical-align: middle;
   -webkit-box-shadow: 3px 3px 3px 1px #000000; 
   box-shadow: 3px 3px 3px 1px #000000;
-  font-size: 30px;
+  font-size: 20px;
   margin-left: -50px;
 }
 
@@ -85,7 +85,7 @@ section{
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   overflow: hidden;
 }
 
@@ -179,7 +179,7 @@ section{
 }
 
 .logos{
-  background-color: #dedede49;
+  background-color: #e6e3e3a2;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -259,8 +259,9 @@ section{
 img{
   max-width: 200%;
   max-height: 200%;
-
 }
+
+
 
 
 .container {
@@ -271,7 +272,7 @@ img{
   width: 400px; /* This can be adjusted based on the size of your hexagon */
   height: 500px; /* Adjust this as well to fit the entire hexagon */
   margin: auto;
-  padding: 200px;
+  padding: 70px;
   
 }
 
@@ -343,4 +344,23 @@ img{
   align-items: center;
   justify-content: center;
   padding-bottom: 200px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.blurry {
+  filter: blur(5px); /* Initially blurred */
+  transition: filter 0.3s ease;
+}
+
+.unblurred {
+  filter: blur(0); /* Remove blur */
+  transform: scale(1.2);
 }
