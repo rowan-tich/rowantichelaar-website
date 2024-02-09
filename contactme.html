@@ -16,15 +16,28 @@
 <body>
     <div class="sidebar project-container" style="display:none" id="sb">
         <button class="sbclose" onclick="closeSB()" >&times;</button>
+        <a href="index.html" class="baritem2">Home</a>
         <a href="projects.html" class="baritem2">Projects</a>
         <a href="experience.html" class="baritem2">Experience</a>
         <a href="resume.html" class="baritem2">Resume</a>
         <a href="https://github.com/rowan-tich" class="baritem2">Github</a>
         <a href="https://www.linkedin.com/in/rowantichelaar/" class="baritem2">LinkedIn</a>
-        <a href="contactme.html" class="baritem2">Contact Me</a>s
+        <a href="contactme.html" class="baritem2">Contact Me</a>
     </div>
 
     <button class="sbopen" onclick="openSB()" style="display:inline-block" id="sbopen">&#9776;</button>
     <button class="topbtn text" href="index.html">Contact Me</button>
+    
+    <div class="parent">
+        <div class="childtext">
+            <form action="https://formspree.io/f/mzbneloo" method="POST">
+            <label><input type="email" name="email">Email</label>
+            <div></div>
+            <label><textarea name="message" rows="5" cols="40">Message</textarea></label>
+            </form>
+        </div>
+        <div style="padding:2%"><button type="submit" class="otherbtn">Submit</button></div>
+    </div>
+
 </body>
 </html>

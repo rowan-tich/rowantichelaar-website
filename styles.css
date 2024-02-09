@@ -42,6 +42,12 @@ h1{
   box-shadow: 3px 3px 3px 1px #000000;
   font-size: 20px;
   margin-left: -50px;
+  max-width: 40%;
+}
+
+h2{
+  margin-top: 0%;
+  margin-bottom: 2%;
 }
 
 img.rounded-corners {
@@ -105,14 +111,14 @@ section{
   display: grid;
   place-items: center;
   align-content: center;
-  padding: 32px 0px;
+  padding: 20px 0px;
   text-decoration: none;
   font-weight: 1500;
   border: none;
   white-space: normal;
   float: none;
   outline: 0;
-  font-size: 40px;
+  font-size: 25px;
   transition: transform .2s;
 }
 .baritem2:hover {
@@ -363,4 +369,25 @@ img{
 .unblurred {
   filter: blur(0); /* Remove blur */
   transform: scale(1.2);
+}
+
+.otherbtn{
+
+}
+
+textarea{
+  background-color: darkslategray;
+  outline: none !important;
+  border:0px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #ffffff4c;
+}
+
+input{
+  padding-left: 20px;
+  background-color: darkslategray;
+  outline: none !important;
+  box-shadow: 0 0 5px #ffffff4c;
+  border-radius: 10px;
+  border:0px;
 }
